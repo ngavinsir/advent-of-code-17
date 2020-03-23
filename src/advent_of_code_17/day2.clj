@@ -14,10 +14,11 @@
 ;; Part 2
 (defn part-2
   [input]
-  (apply + (map #(first (for [a %
-                              b %
-                              :when (and (not (= a b))
-                                         (= 0 (rem a b)))]
-                          (/ a b)))
-                input)))
+  (apply +
+         (map #(first (for [a %
+                            b %
+                            :when (and (not (= a b))
+                                       (= 0 (rem a b)))]
+                        (/ a b)))
+              input)))
 
