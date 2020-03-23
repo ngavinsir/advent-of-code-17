@@ -1,6 +1,6 @@
 (ns advent-of-code-17.day4
   (:require [clojure.java.io :as io])
-  (:require clojure.data))
+  (:require [clojure.data]))
 
 (def input
   (->> (line-seq (io/reader (io/resource "day4.txt")))
